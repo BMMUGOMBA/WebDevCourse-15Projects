@@ -36,3 +36,27 @@ h1 a{
     padding: 20px 20px 0 20px;
     margin-top: 20px;
 }
+
+.text{
+    float: left; 
+    width: 200px;
+    padding: 5px;
+    font-size: 15px;
+    color: #E36A0C;
+    background: white url(images/search.png) right center no-repeat;
+    border: 1px solid #C8D03E;
+}
+
+.submit{
+    float: right;
+    padding: 5px;
+    font-weight: bold;
+    color: white;
+    background: #A751D6;
+    font-size: 15px;
+    border: 1px solid #DCD5E1;
+}
+
+.clear{
+    clear: both;   
+}

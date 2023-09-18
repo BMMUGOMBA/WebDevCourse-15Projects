@@ -1,5 +1,6 @@
 var playing = false;
 var score;
+var trialsLeft;
 $(function(){
     //click on start reset button
     $("#startreset").click(function(){
@@ -16,6 +17,19 @@ $(function(){
 
             //show trials left
             $("#trialsLeft").show();
-        }
+            trialsLeft = 3;
+            addHearts();
+
+            //change button text to reset game
+            $("#startreset").html("Reset Game");
+            }
+        
     });
 });
+
+//functions
+function addHearts(){
+    for(i=0; i < trialsLeft; i++ ){
+        $("#trialsLeft").append('<img src="images/heart.png" class="life">');
+}
+}
